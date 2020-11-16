@@ -1,0 +1,15 @@
+<!--miniprogram/pages/myOrder/myOrder.wxml-->
+<view wx:for="{{info}}" class="info" wx:key="key" class="order">
+	<view class="orderID">{{item._id}}</view>
+	<view class="xian"></view>
+	<view class="name">{{item.oName}}</view>
+	<view class="infoDetail">
+		<view class="oImg">
+			<image src="{{item.oImg}}" />
+		</view>
+		<view class="detail">
+			<text class="detailDetail">{{item.oDetail}}</text>
+			<text class="detailPrice">{{item.oPrice}}￥</text>
+		</view>
+	</view>
+</view>

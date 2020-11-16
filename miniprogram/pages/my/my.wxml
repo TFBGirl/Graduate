@@ -1,0 +1,31 @@
+<!--miniprogram/pages/my/my.wxml-->
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<view class="information">
+<view class="avatar">
+<open-data type="userAvatarUrl" class="avatar"></open-data>
+</view>
+<open-data type="userNickName" class="username"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+	授权登录
+</button>
+</view>
+
+<view class="my">
+	<view class="goodsNum">
+		<text style="color:orange">{{goodsNum}}</text>
+		<text>我发布的</text>
+	</view>
+	<view class="CarsNum">
+		<text style="color:orange">{{CarsNum}}</text>
+		<text>我买到的</text>
+	</view>
+</view>
+
+<view class="set">
+	<navigator url="../addrshow/addrshow" bindtap="showAddr">我的收货地址</navigator>
+	<navigator url="">账户管理</navigator>
+	<navigator url="../myOrder/myOrder">我的订单</navigator>
+	<navigator url="../deal/deal">用户协议</navigator>
+	<navigator url="../privacy/privacy">隐私条款</navigator>
+</view>

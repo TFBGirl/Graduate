@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/car/car",
+    "pages/scondhand/scondhand",
+    "pages/address/address",
+    "pages/addrshow/addrshow",
+    "pages/classify/classify",
+    "pages/goodsDetail/goodsDetail",
+    "pages/order/order",
+    "pages/myOrder/myOrder",
+    "pages/deal/deal",
+    "pages/privacy/privacy"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8B008B",
+    "navigationBarTitleText": "二手商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#BA55D3",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页 (2).png",
+        "selectedIconPath": "images/首页 (1).png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/分类 (2).png",
+        "selectedIconPath": "images/分类 (1).png"
+      },
+      {
+        "pagePath": "pages/scondhand/scondhand",
+        "text": "二手卖",
+        "iconPath": "images/二手市场 (1).png",
+        "selectedIconPath": "images/二手市场.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "images/购物车 (2).png",
+        "selectedIconPath": "images/购物车 (1).png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/我的 (2).png",
+        "selectedIconPath": "images/我的 (1).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

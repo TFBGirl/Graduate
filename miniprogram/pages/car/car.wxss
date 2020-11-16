@@ -1,0 +1,71 @@
+/* pages/car/car.wxss */
+.container{
+  width: 100%;
+  border: 1px rebeccapurple solid;
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10rpx;
+}
+.cartDetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartDetail image{
+  width: 200rpx;
+  height: 200rpx;
+  padding: 0rpx 20rpx 20rpx 20rpx;
+}
+.font{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+checkbox{
+  padding: 10rpx;
+  margin: 10rpx;
+}
+.radio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.radio text{
+  width: 100%;
+  overflow: hidden;
+  /* 溢出显示省略号 */
+}
+.detail{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.radio{
+  display: flex;
+  flex-direction: row;
+}
+.sumDelete{
+  display: flex;
+  position: fixed;
+  right: 0rpx;
+  bottom: 0;
+}
+
+.sumDelete view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60rpx;
+  width: 120rpx;
+  margin: 10rpx;
+  background-color: rebeccapurple;
+  border: rebeccapurple 10rpx solid;
+  border-radius: 20px;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+}

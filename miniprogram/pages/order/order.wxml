@@ -1,0 +1,20 @@
+<!--miniprogram/pages/order/order.wxml-->
+<view class="receiverInfo">
+	<text data-value="{{receiver}}">姓名:{{receiver}}</text>
+	<text name="receiverAddr">地址:{{addr}}</text>
+	<text name="receiverPhone">电话:{{phone}}</text>
+</view>
+
+<view class="verify">
+	<view class="verifyImg">
+		<image name="goodsImg" src="{{imgSrc}}" />
+	</view>
+	<view>
+		<view class="verifyInfo">
+			<text name="goodsName" class="gName">商品名称:{{gName}}</text>
+			<text name="goodsDetail" class="detail">商品详情:{{gDetail}}</text>
+			<text name="goodsPrice" style="color:red;font-weight:bold;font-size:20px">{{gPrice}}￥</text>
+		</view>
+	</view>
+</view>
+<button formType="submit" type="primary" bindtap="submitOrder">提交订单</button>

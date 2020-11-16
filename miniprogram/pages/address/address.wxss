@@ -1,0 +1,16 @@
+/* miniprogram/pages/address/address.wxss */
+.inform{
+  display: flex;
+  flex-direction: column;
+}
+.status-name radio-group{
+  display: flex;
+  flex-direction: row;
+}
+.status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 10rpx;
+}

@@ -1,0 +1,75 @@
+<view class="form">
+	<form bindsubmit="search">
+		<view class="text">
+			<icon type="search"></icon>
+			<input type="text" style="width:80%" placeholder="请输入你想要的商品" bindinput="searchName" />
+			<button class="search" bindtap="dimEnquiry" type="button" size="mini">搜索</button>
+		</view>
+	</form>
+</view>
+
+<!-- 轮播图 -->
+<view class="swiper">
+	<swiper autoplay="true" duration="500" interval="2000" circular="true" indicator-dots="true">
+		<block wx:for="{{imgUrl}}" wx:key="index">
+			<swiper-item>
+				<image style="width:100%" src="{{item.url}}" />
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<view class="verity-big">
+	<text style="font-weight:bold;margin-left:10px">验过的 放心买</text>
+	<view style="height:0px;width:100%;border:1px solid rebeccapurple"></view>
+	<view class="verify">
+		<view class="verify-img">
+			<image src="{{jiahaoURl}}" />
+			<text style="font-size:10px">在线估价</text>
+		</view>
+		<view class="verify-img">
+			<image src="{{jiahaoURl}}" />
+			<text style="font-size:10px">100%正品</text>
+		</view>
+		<view class="verify-img">
+			<image src="{{jiahaoURl}}" />
+			<text style="font-size:10px">售后无忧</text>
+		</view>
+		<view class="verify-img">
+			<image src="{{jiahaoURl}}" />
+			<text style="font-size:10px">省心快买</text>
+		</view>
+	</view>
+</view>
+
+<view class="re">
+	<text>回收流程</text>
+	<view class="recycle">
+		<view class="recycle-img">
+			<image src="cloud://environment-7tvsz.656e-environment-7tvsz-1303193780/03-鉴定估价.png" />
+			<text>在线估价</text>
+		</view>
+		<view class="recycle-img">
+			<image src="cloud://environment-7tvsz.656e-environment-7tvsz-1303193780/天猫-顺丰包邮 (1).png" />
+			<text>顺丰包邮</text>
+		</view>
+		<view class="recycle-img">
+			<image src="cloud://environment-7tvsz.656e-environment-7tvsz-1303193780/质检 (1).png" />
+			<text>专业质检</text>
+		</view>
+		<view class="recycle-img">
+			<image src="cloud://environment-7tvsz.656e-environment-7tvsz-1303193780/收款 (1).png" />
+			<text>技术收款</text>
+		</view>
+	</view>
+</view>
+
+<view class="allImgInfo" wx:for="{{goods}}" wx:key="key" data-value="{{item._id}}" bindtap="jumpGoodsDetail">
+	<view class="allGoodsImg">
+		<image src="{{item.imgSrc}}"></image>
+	</view>
+	<view class="goodsInfo">
+		<view class="name">{{item.gName}}</view>
+		<view style="color:red;font-weight:bold">{{item.gPrice}}￥</view>
+	</view>
+</view>

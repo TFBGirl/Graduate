@@ -1,0 +1,28 @@
+/* miniprogram/pages/addrshow/addrshow.wxss */
+.addrshow{
+  margin: 10rpx;
+  border-radius: 20px;
+  background-color: white;
+}
+.nameInfo{
+  margin-top: 10px;
+}
+.nameInfo text{
+  margin-top:10px;
+  margin-left: 10px;
+}
+.addr{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.movable-area{
+  height: 400rpx;
+  height: 100%;
+
+}
+.delete{
+  background-color: red;
+  color: white;
+  margin-bottom: 10px;
+}

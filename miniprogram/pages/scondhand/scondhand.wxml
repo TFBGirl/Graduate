@@ -1,0 +1,32 @@
+<!--miniprogram/pages/scondhand/scondhand.wxml-->
+<form bindsubmit="publishInfo">
+	<view>
+		<view class="gName">
+			<input placeholder="宝贝名称" name="goodsName" value="{{form}}"></input>
+		</view>
+		<view>
+		<input placeholder="宝贝类型" name="goodsClassify" value="{{form}}"></input>
+		</view>
+	<view>
+		<textarea name="goodsDetail" value="{{form}}" style="width:100%" placeholder="在此描述你的宝贝：如品牌型号、颜色和使用感受等..." ></textarea>
+	</view>
+	</view>
+
+	<!-- 上传图片 -->
+	<view class="img">
+		<!-- 图片预览 -->
+		<view class="UploadImg">
+			<image name="imgInfo"  src="{{UploadImg}}" bindtap="ChooseImg" data-value="{{UploadImg}}"></image>
+		</view>
+		<!-- 点击上传图片 -->
+		<view class="addimg">
+			<image src="cloud://environment-7tvsz.656e-environment-7tvsz-1303193780/添加图片.png" bindtap="ChooseImg" data-value="{{UploadImg}}"></image>
+		</view>
+	</view>
+
+	<!-- 订单信息 -->
+	<view>
+	<input placeholder="宝贝价格" value="{{form}}" name="goodsPrice"></input>
+	</view>
+	<button formType="submit" style="backgroundcolor:rgb(0,128,0)" type="primary">发布</button>
+</form>

@@ -1,0 +1,14 @@
+<!--miniprogram/pages/addrshow/addrshow.wxml-->
+<view class="addrshow" wx:for="{{info}}" wx:key="key">
+	<view class="nameInfo">
+		<text>收货人：{{item.receiver}}</text>
+		<text>联系电话：{{item.phone}}</text>
+	</view>
+	<view class="addr">
+		<text>地址：{{item.addr}}</text>
+		<text>详细地址：{{item.detailAddress}}</text>
+		<text>{{item.status}}</text>	
+	</view>
+	<button class="delete" data-value="{{item._id}}" bindtap="deleteAddress">删除</button>
+</view>
+<button type="primary" bindtap="jumpAddress">添加地址</button>

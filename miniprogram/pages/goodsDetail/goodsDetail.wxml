@@ -1,0 +1,19 @@
+<!--miniprogram/pages/goodsDetail/goodsDetail.wxml-->
+<view>
+	<view class="img">
+		<image src="{{imgSrc}}"></image>
+	</view>
+	<view class="info">
+		<text style="font-weight:bold;font-size:50rpx;color:red">{{price}}￥</text>
+		<text style="font-weight:bold">{{name}}</text>
+		<text>{{detail}}</text>
+	</view>
+	<view class="car">
+		<view class="GoToCar" bindtap="GoTo">
+			<image style="height:35px;width:35px" src="../../images/购物车 (1).png"></image>
+			<text>购物车</text>
+		</view>
+		<view data-value="{{goods}}" style="background-color: purple;" bindtap="addCar">加入购物车</view>
+		<view data-value="{{goods}}" style="background-color: rebeccapurple;" bindtap="jumpOrder">立即结算</view>
+	</view>
+</view>

@@ -1,0 +1,83 @@
+<!--miniprogram/pages/classify/classify.wxml-->
+<view class="classify">
+	<view class='topTabSwiper'>
+		<view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-text="电脑" data-current="0" bindtap='checkCurrent'>电脑</view>
+		<view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-text="手机" data-current="1" bindtap='checkCurrent'>手机</view>
+		<view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-text="耳机" data-current="2" bindtap='checkCurrent'>耳机</view>
+		<view class='tab  {{currentData == 3 ? "tabBorer" : ""}}' data-text="图书" data-current="3" bindtap='checkCurrent'>图书</view>
+		<view class='tab  {{currentData == 4 ? "tabBorer" : ""}}' data-text="平板" data-current="4" bindtap='checkCurrent'>平板</view>
+		<view class='tab  {{currentData == 5 ? "tabBorer" : ""}}' data-text="其他数码" data-current="5" bindtap='checkCurrent'>其他数码</view>
+	</view>
+	<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text class="goodsName" style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+
+		<swiper-item>
+			<view class='swiper_con' wx:for="{{classify}}" wx:key="key" data-value="{{item._id}}" bindtap="get">
+				<view class="img">
+					<image src="{{item.imgSrc}}"></image>
+				</view>
+				<view class="goodsinfo">
+					<text style="font-size:13px">{{item.gName}}</text>
+					<text class="price">{{item.gPrice}}￥</text>
+				</view>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>

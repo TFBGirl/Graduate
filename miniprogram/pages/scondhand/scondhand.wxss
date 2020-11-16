@@ -1,0 +1,24 @@
+/* miniprogram/pages/scondhand/scondhand.wxss */
+.img{
+  display: flex;
+  flex-direction: row;
+}
+.UploadImg{
+  height: 100px;
+  width: 100px;
+}
+.UploadImg image{
+  height: 100px;
+  width: 100px;
+}
+.UploadImg-url{
+  height: 100px;
+  width: 100px;
+}
+.addimg{
+  border: 2px solid lightgray;
+}
+.addimg image{
+  height: 100px;
+  width: 100px;
+}

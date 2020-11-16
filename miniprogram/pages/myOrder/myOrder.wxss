@@ -1,0 +1,66 @@
+/* miniprogram/pages/myOrder/myOrder.wxss */
+.order {
+  border: white 1px solid;
+  margin: 10px;
+  height: 140px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.orderID{
+  color: grey;
+  margin-left: 10px;
+}
+
+.xian {
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px gray solid;
+}
+
+.name {
+  padding: 5px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical
+}
+
+.infoDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.detail {
+  width: 400rpx;
+}
+
+.detailPrice {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.detailDetail {
+  width: 100%;
+  /*超出一行文字自动隐藏  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+
+.oImg {
+  margin: 15rpx;
+}
+
+.oImg image {
+  border: 1rpx solid lightgray;
+  border-radius: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
+}

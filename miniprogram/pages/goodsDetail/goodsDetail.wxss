@@ -1,0 +1,34 @@
+/* miniprogram/pages/goodsDetail/goodsDetail.wxss */
+.img image{
+  width: 100%;
+  height: 300px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.car{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+}
+.car view{
+  width: 200rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.GoToCar{
+  background-color: white;
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+}
+.GoToCar text{
+  color: rebeccapurple;
+}

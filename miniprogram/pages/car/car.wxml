@@ -1,0 +1,24 @@
+<!--pages/car/car.wxml-->
+<view class="container" wx:for="{{goodsCar}}" wx:key="key">
+
+	<view class="radio">
+		<checkbox data-value="{{item._id}}" bindtap="getID"></checkbox>
+		<text>{{item.oName}}</text>
+	</view>
+
+	<view class="cartDetail" bindtap="getGoodsDetail" data-value="{{item._id}}">
+		<view>
+			<image src="{{item.oImg}}"></image>
+		</view>
+		<view class="font">
+			<text>{{msg}}</text>
+			<text class="detail">{{item.oDetail}}</text>
+			<text style="color:red;font-weight:bold;font-size:20px">{{item.oPrice}}￥</text>
+		</view>
+	</view>
+
+</view>
+<view class="sumDelete">
+	<view bindtap="getPriceSettlement">结算</view>
+	<view bindtap="deleteGoods">删除</view>
+</view>

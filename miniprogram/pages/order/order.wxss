@@ -1,0 +1,48 @@
+/* miniprogram/pages/order/order.wxss */
+.verify{
+  display: flex;
+  flex-direction: row;
+}
+.receiverInfo{
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  height: 65px;
+  background-color: white; 
+  border-radius: 10px;
+}
+.receiverInfo text{
+  margin-left: 4px;
+}
+.verify{
+  padding: 5px;
+  margin: 2px;
+}
+.verifyImg image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10%;
+}
+.verifyInfo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.detail{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+.gName{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+}
+.verifyInfo text{
+  width: 100%;
+  overflow: hidden;
+}
